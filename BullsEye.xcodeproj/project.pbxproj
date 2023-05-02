@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A13E901C2A01574600A71B7D /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = A13E901B2A01574600A71B7D /* Quick */; };
+		A13E901F2A01576200A71B7D /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = A13E901E2A01576200A71B7D /* ComposableArchitecture */; };
 		B2056E162A0122CA00E0E09C /* BullsEyeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2056E152A0122CA00E0E09C /* BullsEyeApp.swift */; };
 		B2056E182A0122CA00E0E09C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2056E172A0122CA00E0E09C /* ContentView.swift */; };
 		B2056E1A2A0122CB00E0E09C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2056E192A0122CB00E0E09C /* Assets.xcassets */; };
@@ -40,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A13E901F2A01576200A71B7D /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A13E901C2A01574600A71B7D /* Quick in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +151,9 @@
 			dependencies = (
 			);
 			name = BullsEye;
+			packageProductDependencies = (
+				A13E901E2A01576200A71B7D /* ComposableArchitecture */,
+			);
 			productName = BullsEye;
 			productReference = B2056E122A0122CA00E0E09C /* BullsEye.app */;
 			productType = "com.apple.product-type.application";
@@ -165,6 +172,9 @@
 				B2056E2C2A0122D900E0E09C /* PBXTargetDependency */,
 			);
 			name = BullsEyeTests;
+			packageProductDependencies = (
+				A13E901B2A01574600A71B7D /* Quick */,
+			);
 			productName = BullsEyeTests;
 			productReference = B2056E272A0122D900E0E09C /* BullsEyeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -197,6 +207,10 @@
 				Base,
 			);
 			mainGroup = B2056E092A0122CA00E0E09C;
+			packageReferences = (
+				A13E901A2A01574600A71B7D /* XCRemoteSwiftPackageReference "Quick" */,
+				A13E901D2A01576200A71B7D /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = B2056E132A0122CA00E0E09C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -490,6 +504,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A13E901A2A01574600A71B7D /* XCRemoteSwiftPackageReference "Quick" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Quick";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.1.0;
+			};
+		};
+		A13E901D2A01576200A71B7D /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.52.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A13E901B2A01574600A71B7D /* Quick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A13E901A2A01574600A71B7D /* XCRemoteSwiftPackageReference "Quick" */;
+			productName = Quick;
+		};
+		A13E901E2A01576200A71B7D /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A13E901D2A01576200A71B7D /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B2056E0A2A0122CA00E0E09C /* Project object */;
 }
