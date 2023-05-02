@@ -25,6 +25,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A13E90192A01551700A71B7D /* BullsEye.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = BullsEye.xctestplan; sourceTree = "<group>"; };
 		B2056E122A0122CA00E0E09C /* BullsEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BullsEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2056E152A0122CA00E0E09C /* BullsEyeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullsEyeApp.swift; sourceTree = "<group>"; };
 		B2056E172A0122CA00E0E09C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +56,7 @@
 		B2056E092A0122CA00E0E09C = {
 			isa = PBXGroup;
 			children = (
+				A13E90192A01551700A71B7D /* BullsEye.xctestplan */,
 				B2056E142A0122CA00E0E09C /* BullsEye */,
 				B2056E282A0122D900E0E09C /* BullsEyeTests */,
 				B2056E132A0122CA00E0E09C /* Products */,

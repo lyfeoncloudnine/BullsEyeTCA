@@ -1,0 +1,38 @@
+{
+  "configurations" : [
+    {
+      "id" : "837E1B93-714F-46FB-A21F-D8E6AB3E7BF1",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:BullsEye.xcodeproj",
+          "identifier" : "B2056E112A0122CA00E0E09C",
+          "name" : "BullsEye"
+        }
+      ]
+    },
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:BullsEye.xcodeproj",
+      "identifier" : "B2056E112A0122CA00E0E09C",
+      "name" : "BullsEye"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:BullsEye.xcodeproj",
+        "identifier" : "B2056E262A0122D900E0E09C",
+        "name" : "BullsEyeTests"
+      }
+    }
+  ],
+  "version" : 1
+}
