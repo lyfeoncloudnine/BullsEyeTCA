@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A13E901C2A01574600A71B7D /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = A13E901B2A01574600A71B7D /* Quick */; };
 		A13E901F2A01576200A71B7D /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = A13E901E2A01576200A71B7D /* ComposableArchitecture */; };
+		A13E90242A0157D300A71B7D /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13E90232A0157D300A71B7D /* Record.swift */; };
 		B2056E162A0122CA00E0E09C /* BullsEyeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2056E152A0122CA00E0E09C /* BullsEyeApp.swift */; };
 		B2056E182A0122CA00E0E09C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2056E172A0122CA00E0E09C /* ContentView.swift */; };
 		B2056E1A2A0122CB00E0E09C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2056E192A0122CB00E0E09C /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		A13E90192A01551700A71B7D /* BullsEye.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = BullsEye.xctestplan; sourceTree = "<group>"; };
+		A13E90232A0157D300A71B7D /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		B2056E122A0122CA00E0E09C /* BullsEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BullsEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2056E152A0122CA00E0E09C /* BullsEyeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullsEyeApp.swift; sourceTree = "<group>"; };
 		B2056E172A0122CA00E0E09C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +59,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A13E90222A0157CA00A71B7D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A13E90232A0157D300A71B7D /* Record.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		B2056E092A0122CA00E0E09C = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				B2056E332A01231B00E0E09C /* Features */,
+				A13E90222A0157CA00A71B7D /* Model */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -247,6 +258,7 @@
 			files = (
 				B2056E182A0122CA00E0E09C /* ContentView.swift in Sources */,
 				B2056E162A0122CA00E0E09C /* BullsEyeApp.swift in Sources */,
+				A13E90242A0157D300A71B7D /* Record.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
