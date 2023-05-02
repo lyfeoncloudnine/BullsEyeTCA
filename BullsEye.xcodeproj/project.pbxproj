@@ -73,10 +73,9 @@
 		B2056E142A0122CA00E0E09C /* BullsEye */ = {
 			isa = PBXGroup;
 			children = (
-				B2056E152A0122CA00E0E09C /* BullsEyeApp.swift */,
-				B2056E172A0122CA00E0E09C /* ContentView.swift */,
-				B2056E192A0122CB00E0E09C /* Assets.xcassets */,
-				B2056E1B2A0122CB00E0E09C /* Preview Content */,
+				B2056E302A01230700E0E09C /* App */,
+				B2056E322A01230E00E0E09C /* Sources */,
+				B2056E312A01230A00E0E09C /* Resources */,
 			);
 			path = BullsEye;
 			sourceTree = "<group>";
@@ -95,6 +94,39 @@
 				B2056E292A0122D900E0E09C /* BullsEyeTests.swift */,
 			);
 			path = BullsEyeTests;
+			sourceTree = "<group>";
+		};
+		B2056E302A01230700E0E09C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B2056E152A0122CA00E0E09C /* BullsEyeApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B2056E312A01230A00E0E09C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B2056E192A0122CB00E0E09C /* Assets.xcassets */,
+				B2056E1B2A0122CB00E0E09C /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B2056E322A01230E00E0E09C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B2056E332A01231B00E0E09C /* Features */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		B2056E332A01231B00E0E09C /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				B2056E172A0122CA00E0E09C /* ContentView.swift */,
+			);
+			path = Features;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,7 +374,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BullsEye/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"BullsEye/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -370,7 +402,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BullsEye/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"BullsEye/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
