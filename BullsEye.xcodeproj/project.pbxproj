@@ -10,6 +10,8 @@
 		A13E901C2A01574600A71B7D /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = A13E901B2A01574600A71B7D /* Quick */; };
 		A13E901F2A01576200A71B7D /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = A13E901E2A01576200A71B7D /* ComposableArchitecture */; };
 		A13E90242A0157D300A71B7D /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13E90232A0157D300A71B7D /* Record.swift */; };
+		A13E90282A0158A900A71B7D /* RecordServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13E90272A0158A900A71B7D /* RecordServiceType.swift */; };
+		A13E902A2A0158B200A71B7D /* RecordService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13E90292A0158B200A71B7D /* RecordService.swift */; };
 		B2056E162A0122CA00E0E09C /* BullsEyeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2056E152A0122CA00E0E09C /* BullsEyeApp.swift */; };
 		B2056E182A0122CA00E0E09C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2056E172A0122CA00E0E09C /* ContentView.swift */; };
 		B2056E1A2A0122CB00E0E09C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2056E192A0122CB00E0E09C /* Assets.xcassets */; };
@@ -30,6 +32,8 @@
 /* Begin PBXFileReference section */
 		A13E90192A01551700A71B7D /* BullsEye.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = BullsEye.xctestplan; sourceTree = "<group>"; };
 		A13E90232A0157D300A71B7D /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		A13E90272A0158A900A71B7D /* RecordServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordServiceType.swift; sourceTree = "<group>"; };
+		A13E90292A0158B200A71B7D /* RecordService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordService.swift; sourceTree = "<group>"; };
 		B2056E122A0122CA00E0E09C /* BullsEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BullsEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2056E152A0122CA00E0E09C /* BullsEyeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullsEyeApp.swift; sourceTree = "<group>"; };
 		B2056E172A0122CA00E0E09C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -65,6 +69,23 @@
 				A13E90232A0157D300A71B7D /* Record.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A13E90252A01581C00A71B7D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A13E90262A01582100A71B7D /* RecordServices */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A13E90262A01582100A71B7D /* RecordServices */ = {
+			isa = PBXGroup;
+			children = (
+				A13E90272A0158A900A71B7D /* RecordServiceType.swift */,
+				A13E90292A0158B200A71B7D /* RecordService.swift */,
+			);
+			path = RecordServices;
 			sourceTree = "<group>";
 		};
 		B2056E092A0122CA00E0E09C = {
@@ -132,6 +153,7 @@
 		B2056E322A01230E00E0E09C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				A13E90252A01581C00A71B7D /* Services */,
 				B2056E332A01231B00E0E09C /* Features */,
 				A13E90222A0157CA00A71B7D /* Model */,
 			);
@@ -256,9 +278,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A13E90282A0158A900A71B7D /* RecordServiceType.swift in Sources */,
 				B2056E182A0122CA00E0E09C /* ContentView.swift in Sources */,
 				B2056E162A0122CA00E0E09C /* BullsEyeApp.swift in Sources */,
 				A13E90242A0157D300A71B7D /* Record.swift in Sources */,
+				A13E902A2A0158B200A71B7D /* RecordService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
