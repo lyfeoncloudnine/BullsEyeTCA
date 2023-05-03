@@ -64,9 +64,20 @@ struct GameView: View {
                         .disabled(viewStore.isPlaying)
                     }
                     ToolbarItem(placement: .navigationBarTrailing) {
-                        Button {
-                            
-                        } label: {
+                        NavigationLink(
+                            destination: IfLetStore(
+                                store.scope(
+                                    state: \.recordState,
+                                    action: GameFeature.Action.record
+                                )
+                            ) {
+                                RecordView(store: $0)
+                            },
+                            isActive: viewStore.binding(
+                                get: \.isNavigationActive,
+                                send: GameFeature.Action.setNavigation(isActive:)
+                            )
+                        ) {
                             Image(systemName: "trophy.fill")
                         }
                     }

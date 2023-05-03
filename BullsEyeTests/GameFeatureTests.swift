@@ -90,4 +90,18 @@ final class GameFeatureTests: XCTestCase {
             $0.alertMessage = nil
         }
     }
+    
+    func testNavigation() async {
+        let store = TestStore(initialState: GameFeature.State(), reducer: GameFeature(recordService: recordService, randomNumber: randomNumber))
+        
+        await store.send(.setNavigation(isActive: true)) {
+            $0.isNavigationActive = true
+            $0.recordState = RecordFeature.State()
+        }
+        
+        await store.send(.setNavigation(isActive: false)) {
+            $0.isNavigationActive = false
+            $0.recordState = nil
+        }
+    }
 }
