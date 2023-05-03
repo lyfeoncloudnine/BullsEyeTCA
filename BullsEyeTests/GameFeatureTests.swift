@@ -15,6 +15,11 @@ final class GameFeatureTests: XCTestCase {
     let recordService: RecordServiceType = RecordService()
     let randomNumber = { 1 }
     
+    override func tearDown() {
+        recordService.clear()
+        super.tearDown()
+    }
+    
     func testPlayButtonTap() async {
         let store = TestStore(initialState: GameFeature.State(), reducer: GameFeature(recordService: recordService, randomNumber: randomNumber))
         
