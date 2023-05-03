@@ -12,7 +12,7 @@ import ComposableArchitecture
 struct RecordFeature: ReducerProtocol {
     enum Action: Equatable {
         case load
-        case delete(Record)
+        case delete(IndexSet)
         case setRecords([Record])
     }
     
@@ -29,8 +29,8 @@ struct RecordFeature: ReducerProtocol {
             let records = recordService.records()
             return .send(.setRecords(records))
             
-        case .delete(let record):
-            let records = recordService.delete(record: record)
+        case .delete(let index):
+            let records = recordService.delete(index: index)
             return .send(.setRecords(records))
             
         case .setRecords(let records):
