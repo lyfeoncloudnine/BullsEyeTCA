@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Record: Codable, Equatable {
+struct Record: Codable, Equatable, Identifiable {
     let id: String
     let targetNumber: Int
     let score: Int
