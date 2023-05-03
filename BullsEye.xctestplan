@@ -26,6 +26,7 @@
   },
   "testTargets" : [
     {
+      "parallelizable" : true,
       "target" : {
         "containerPath" : "container:BullsEye.xcodeproj",
         "identifier" : "B2056E262A0122D900E0E09C",
