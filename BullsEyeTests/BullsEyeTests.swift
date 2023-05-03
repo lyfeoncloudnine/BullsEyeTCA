@@ -48,7 +48,7 @@ private extension BullsEyeTests {
                 }
                 
                 it("기록을 지울 수 있다") {
-                    records = recordService.delete(record: record)
+                    records = recordService.delete(index: IndexSet(integer: 0))
                     XCTAssertTrue(records.isEmpty)
                 }
             }

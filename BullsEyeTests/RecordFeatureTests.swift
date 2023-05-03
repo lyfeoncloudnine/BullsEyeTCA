@@ -42,7 +42,7 @@ final class RecordFeatureTests: XCTestCase {
         store.exhaustivity = .off
         
         await store.send(.load)
-        await store.send(.delete(record))
+        await store.send(.delete(IndexSet(integer: 0)))
         
         await store.receive(.setRecords([])) {
             $0.records = []

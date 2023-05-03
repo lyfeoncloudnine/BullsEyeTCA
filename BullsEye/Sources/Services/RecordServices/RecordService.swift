@@ -29,13 +29,10 @@ struct RecordService: RecordServiceType {
         return records
     }
     
-    func delete(record: Record) -> [Record] {
+    func delete(index: IndexSet) -> [Record] {
         var records = records()
+        records.remove(atOffsets: index)
         
-        guard records.isEmpty == false else { return records }
-        guard let index = records.firstIndex(where: { $0.id == record.id }) else { return records }
-        
-        records.remove(at: index)
         userDefaults.set(try? PropertyListEncoder().encode(records), forKey: key)
         
         return records

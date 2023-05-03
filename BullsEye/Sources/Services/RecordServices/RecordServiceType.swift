@@ -10,6 +10,6 @@ import Foundation
 protocol RecordServiceType {
     func records() -> [Record]
     @discardableResult func create(record: Record) -> [Record]
-    func delete(record: Record) -> [Record]
+    func delete(index: IndexSet) -> [Record]
     func clear()
 }
