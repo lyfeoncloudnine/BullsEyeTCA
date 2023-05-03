@@ -21,6 +21,7 @@
 		B2205B7F2A02041B00B70D42 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2205B7E2A02041B00B70D42 /* GameView.swift */; };
 		B280A8242A024A0500C2B5C4 /* RecordFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B280A8232A024A0500C2B5C4 /* RecordFeatureTests.swift */; };
 		B280A8272A024E4C00C2B5C4 /* RecordFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B280A8262A024E4C00C2B5C4 /* RecordFeature.swift */; };
+		B280A8292A024F0A00C2B5C4 /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B280A8282A024F0A00C2B5C4 /* RecordView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		B2205B7E2A02041B00B70D42 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		B280A8232A024A0500C2B5C4 /* RecordFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordFeatureTests.swift; sourceTree = "<group>"; };
 		B280A8262A024E4C00C2B5C4 /* RecordFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordFeature.swift; sourceTree = "<group>"; };
+		B280A8282A024F0A00C2B5C4 /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				B280A8262A024E4C00C2B5C4 /* RecordFeature.swift */,
+				B280A8282A024F0A00C2B5C4 /* RecordView.swift */,
 			);
 			path = Record;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				B280A8272A024E4C00C2B5C4 /* RecordFeature.swift in Sources */,
 				B2056E162A0122CA00E0E09C /* BullsEyeApp.swift in Sources */,
 				A13E90242A0157D300A71B7D /* Record.swift in Sources */,
+				B280A8292A024F0A00C2B5C4 /* RecordView.swift in Sources */,
 				A13E902A2A0158B200A71B7D /* RecordService.swift in Sources */,
 				B2205B7F2A02041B00B70D42 /* GameView.swift in Sources */,
 			);
